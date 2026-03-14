@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Details/Summary reset */
+details > summary {
+    list-style: none;
+}
+
+details > summary::marker,
+details > summary::-webkit-details-marker {
+    display: none;
+    content: "";
+}
+
+/* Accordion row shared styles */
+.accordion-row {
+    transition: all 0.2s ease;
+}
+
+.accordion-row:hover {
+    background-color: #000000;
+    color: #FAFAFA;
+    cursor: crosshair;
+}
+
+.accordion-row:hover .row-meta {
+    color: #FAFAFA;
+}
+
+.accordion-row:hover .arrow-icon {
+    color: #FAFAFA;
+}
+
+details[open] .accordion-row {
+    background-color: #000000;
+    color: #FAFAFA;
+}
+
+details[open] .row-meta,
+details[open] .arrow-icon {
+    color: #FAFAFA;
+}
+
+/* Responsive meta (tech-stack / role-duration) */
+.row-meta {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .row-meta {
+        display: block;
+    }
+}
+
+/* Accordion content animation */
+.accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+details[open] .accordion-content {
+    grid-template-rows: 1fr;
+}
+
+.accordion-content-inner {
+    overflow: hidden;
+}
