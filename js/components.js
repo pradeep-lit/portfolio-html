@@ -5,7 +5,7 @@ function initSidebar() {
     const activePage = sidebar.dataset.active;
 
     const navItems = [
-        { label: 'OVERVIEW', href: 'overview.html' },
+        { label: 'OVERVIEW', href: 'index.html' },
         { label: 'PROJECTS', href: 'projects.html' },
         { label: 'EXPERIENCE', href: 'experience.html' },
         { label: 'CONTACT', href: 'contact.html' },
