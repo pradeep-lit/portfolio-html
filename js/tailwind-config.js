@@ -1,3 +1,12 @@
+// Apply theme early to prevent flash of wrong theme
+(function() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = saved === 'dark' || (!saved && prefersDark);
+    document.documentElement.classList.toggle('dark', isDark);
+    document.documentElement.classList.toggle('light', !isDark);
+})();
+
 tailwind.config = {
     darkMode: "class",
     theme: {
