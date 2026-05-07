@@ -32,7 +32,7 @@ ${navLinks}
 </nav>
 </div>
 <div class="flex flex-col gap-6 pt-12 md:pt-0">
-<a class="group flex items-center justify-between w-full py-4 px-4 bg-primary dark:bg-white text-background-light dark:text-primary hover:bg-background-light dark:hover:bg-primary hover:text-primary dark:hover:text-white border border-primary dark:border-white transition-all font-mono text-xs uppercase tracking-widest font-bold" href="assets/PRADEEP_CHAUHAN.pdf" download>
+<a class="group flex items-center justify-between w-full py-4 px-4 bg-primary dark:bg-white text-background-light dark:text-primary hover:bg-background-light dark:hover:bg-primary hover:text-primary dark:hover:text-white border border-primary dark:border-white transition-all font-mono text-xs uppercase tracking-widest font-bold" href="assets/Pradeep_Chauhan.pdf" download>
 <span>Download CV</span>
 <span class="material-symbols-outlined text-sm transform group-hover:translate-y-1 transition-transform">download</span>
 </a>
